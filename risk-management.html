@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management - Be Profitable With Futures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Be Profitable With Futures</h1>
+            <p class="subtitle">Challenging misconceptions and building a foundation for success in trading</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="current-knowledge.html">Current Knowledge</a></li>
+            <li><a href="thesis.html">Thesis</a></li>
+            <li><a href="evidence.html" class="active">Evidence</a></li>
+            <li><a href="counterarguments.html">Counterarguments</a></li>
+            <li><a href="significance.html">Significance</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section evidence-detail">
+            <div class="evidence-breadcrumb">
+                <a href="evidence.html"><i class="fas fa-arrow-left"></i> Back to Evidence</a>
+                <span class="breadcrumb-divider">|</span>
+                <span class="current-page">Risk Management</span>
+            </div>
+            
+            <h2>Prioritize Capital Preservation</h2>
+            
+            <div class="evidence-container">
+                <div class="evidence-text">
+                    <h3>The Foundation of Trading Success</h3>
+                    <p>"Successful traders prioritize preserving their capital using a stop-loss with proper position sizing and diversification." - Nexus Futures Trader</p>
+                    <p>Expert trader Joshua emphasizes "always using a stop-loss" and "only risking 1-2% of your account in each trade."</p>
+                    
+                    <div class="key-concept">
+                        <h4>Key Risk Management Strategies</h4>
+                        <ul>
+                            <li><strong>Setting stop-loss orders:</strong> Predetermined exit points that limit potential losses on each trade</li>
+                            <li><strong>Proper position sizing:</strong> Calculating trade size based on account size and risk tolerance</li>
+                            <li><strong>Hedging techniques:</strong> Using options or correlated assets to offset potential losses</li>
+                            <li><strong>Monitoring volatility:</strong> Adjusting position sizes based on current market conditions</li>
+                            <li><strong>Using futures spreads:</strong> Trading related contracts to reduce exposure to market-wide moves</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>The Mathematics of Risk</h3>
+                    <p>Risk management isn't just about avoiding losses—it's about mathematical survival. Consider this example:</p>
+                    
+                    <div class="example-box">
+                        <h4>Example: The Impact of Drawdowns</h4>
+                        <table class="risk-table">
+                            <tr>
+                                <th>Loss Percentage</th>
+                                <th>Gain Required to Break Even</th>
+                            </tr>
+                            <tr>
+                                <td>10%</td>
+                                <td>11.1%</td>
+                            </tr>
+                            <tr>
+                                <td>20%</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>30%</td>
+                                <td>42.9%</td>
+                            </tr>
+                            <tr>
+                                <td>40%</td>
+                                <td>66.7%</td>
+                            </tr>
+                            <tr>
+                                <td>50%</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>60%</td>
+                                <td>150%</td>
+                            </tr>
+                        </table>
+                        <p class="example-note">As losses increase, the gain required to recover becomes exponentially larger. This is why limiting losses is mathematically more important than maximizing gains.</p>
+                    </div>
+                    
+                    <h3>The 1-2% Rule</h3>
+                    <p>One of the most consistent recommendations across trading literature is to risk only 1-2% of total account value on any single trade. This approach ensures that:</p>
+                    <ul>
+                        <li>A string of consecutive losses won't devastate your account</li>
+                        <li>You can remain psychologically stable during drawdowns</li>
+                        <li>You have time to learn and improve your strategy</li>
+                    </ul>
+                    <p>As Joshua noted in his interview, "Survival is the key to becoming a profitable trader." Without proper risk management, traders often blow up their accounts before they can develop proficiency.</p>
+                </div>
+                
+                <div class="evidence-visual">
+                    <div class="risk-visual">
+                        <h4>Account Risk Per Trade</h4>
+                        <div class="risk-meter-container">
+                            <div class="risk-meter">
+                                <div class="risk-indicator" id="risk-indicator"></div>
+                                <div class="risk-labels">
+                                    <span>0%</span>
+                                    <span>1-2%</span>
+                                    <span>5%</span>
+                                    <span>10%+</span>
+                                </div>
+                            </div>
+                            <div class="risk-description">
+                                <p><strong>Recommended:</strong> 1-2% per trade</p>
+                                <p>Risking more than 2% per trade significantly increases the chance of depleting your trading account during a losing streak.</p>
+                            </div>
+                        </div>
+                        <div class="interactive-control">
+                            <label for="risk-slider">Adjust risk level:</label>
+                            <input type="range" id="risk-slider" min="0" max="15" value="2" oninput="updateRiskMeter(this.value)">
+                            <span id="risk-value">2%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="survival-simulation">
+                        <h4>Trading Survival Simulation</h4>
+                        <div class="simulation-container">
+                            <canvas id="survivalChart"></canvas>
+                        </div>
+                        <div class="simulation-description">
+                            <p>This simulation shows the probability of account survival over 100 trades with different risk levels per trade, assuming a 50% win rate and 1:1.5 risk-reward ratio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="navigation-buttons evidence-nav">
+                <a href="evidence.html" class="nav-button back"><i class="fas fa-arrow-left"></i> Back to Evidence</a>
+                <a href="psychological-discipline.html" class="nav-button next">Next: Psychological Discipline <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>AP Language & Composition Final Project by Rhys Paulk</p>
+            <div class="sources">
+                <h4>Sources:</h4>
+                <ul>
+                    <li>Interview with Joshua on "Trading Basics," 2025</li>
+                    <li>"Advanced Futures Trading Strategies for Success," Funded Futures Network, 2025</li>
+                    <li>"How to combine Fundamental and Technical Analysis in Forex," FX Predator, 2025</li>
+                    <li>"Effective Futures Trading Risk Management Strategies," Nexgen Futures Trader, 2024</li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="current-knowledge.html">Current Knowledge</a>
+                <a href="thesis.html">Thesis</a>
+                <a href="evidence.html">Evidence</a>
+                <a href="counterarguments.html">Counterarguments</a>
+                <a href="significance.html">Significance</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

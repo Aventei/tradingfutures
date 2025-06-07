@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Be Profitable With Futures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Be Profitable With Futures</h1>
+            <p class="subtitle">Challenging misconceptions and building a foundation for success in trading</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="current-knowledge.html">Current Knowledge</a></li>
+            <li><a href="thesis.html">Thesis</a></li>
+            <li><a href="evidence.html">Evidence</a></li>
+            <li><a href="counterarguments.html">Counterarguments</a></li>
+            <li><a href="significance.html">Significance</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>About the Author</h3>
+                    <div class="author-profile">
+                        <div class="author-image">
+                            <img src="images/pfpofrhys.jpg" alt="Rhys Paulk" class="author-photo">
+                        </div>
+                        <div class="author-details">
+                            <h4>Rhys Paulk</h4>
+                            <p class="author-title">AP Language & Composition Student</p>
+                            <p class="author-bio">Passionate about the markets and helping others understand the complexities of trading. Feel free to contact me!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <p>rhys.paulk@wccschools.org</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div class="method-details">
+                                <h4>Phone</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="method-details">
+                                <h4>Location</h4>
+                                <p>AP Language & Composition Class</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>AP Language & Composition Final Project by Rhys Paulk</p>
+            <div class="sources">
+                <h4>Sources:</h4>
+                <ul>
+                    <li>Interview with Joshua on "Trading Basics," 2025</li>
+                    <li>"Advanced Futures Trading Strategies for Success," Funded Futures Network, 2025</li>
+                    <li>"How to combine Fundamental and Technical Analysis in Forex," FX Predator, 2025</li>
+                    <li>"Effective Futures Trading Risk Management Strategies," Nexgen Futures Trader, 2024</li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="current-knowledge.html">Current Knowledge</a>
+                <a href="thesis.html">Thesis</a>
+                <a href="evidence.html">Evidence</a>
+                <a href="counterarguments.html">Counterarguments</a>
+                <a href="significance.html">Significance</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demonstration form and does not actually send messages.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
