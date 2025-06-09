@@ -102,8 +102,8 @@ function initEmotionChart() {
                                 
                                 if (label === 'Emotional State') {
                                     const emotions = [
-                                        'Cautious Optimism', 
-                                        'Excitement', 
+                                        'Anticipation/Optimism', 
+                                        'Happiness/Excitement', 
                                         'Euphoria/Greed', 
                                         'Anxiety/Denial', 
                                         'Fear/Panic', 
